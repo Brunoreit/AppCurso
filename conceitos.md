@@ -1,6 +1,16 @@
+// variáveis
+
+    let, var, const
+
+    let exemplo = "é um exemplo"
+
+    (variáveis trabalham com ESCOPO => {})
+
+
+
 //objetos
 
-    Todo objeto possui uma PROPRIEDADE e um VALOR
+    Todo objeto possui uma PROPRIEDADE e um VALOR. Serve para ESTRUTURAR melhor algum dado mais complexo
 
     let NomeObjeto = {
         value: 'exemplo'
@@ -8,6 +18,35 @@
     }
 
     (Não precisa escrever um objeto exatamente desse jeito, pode ser diferente)
+
+
+// array
+
+    conheço melhor como LISTAS ou VETOR
+
+    let exemplo = []
+
+
+    Pode-se criar uma LISTA/VETOR de vários OBJETOS
+
+meta1 = {
+    value: beber 3 litros de água no dia"
+    checked: etc
+    }
+
+    let metas = [
+        
+        meta1,  //Objeto criado acima e é o INDICE [0] da LISTA
+
+        {
+            value: "caminhar 15 min por dia"
+            checked: etc
+        }
+
+//ESCOPO dentro da LISTA que é entendido como INDICE [1]
+
+    ]
+
 
 
 // arrow function
