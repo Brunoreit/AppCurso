@@ -48,7 +48,7 @@ meta1 = {
     ]
 
 
-métodos de array: push, find, forEach
+métodos de array: push, find, forEach, filter, map : HOF (high order functions)
 
 
 ##  arrow function
