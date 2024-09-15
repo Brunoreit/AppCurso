@@ -1,4 +1,4 @@
-// variáveis
+##  variáveis
 
     let, var, const
 
@@ -8,7 +8,7 @@
 
 
 
-//objetos
+## objetos
 
     Todo objeto possui uma PROPRIEDADE e um VALOR. Serve para ESTRUTURAR melhor algum dado mais complexo
 
@@ -20,7 +20,7 @@
     (Não precisa escrever um objeto exatamente desse jeito, pode ser diferente)
 
 
-// array
+## array
 
     conheço melhor como LISTAS ou VETOR
 
@@ -49,21 +49,28 @@ meta1 = {
 
 
 
-// arrow function
+##  arrow function
 
     const CriarMeta = () => {}
     
     (pegando uma arrow function e atribuindo a uma variável)
 
- //function 
+ ## function 
 
     function CriarMeta() {}
 
     (apenas criando uma função)   
 
 
-//Módulos 
+## Módulos 
 
     importação de módulos (require, commonJS)
 
     utilizei a biblioteca "inquirer" para criar prompts interativos    
+
+## programação assíncrona e promises:
+
+    uso de funções assíncrona (async/await)
+
+    // await => o programa vai "esperar" uma resposta do usuário que vai ser atribuida ao "select" que eu criei
+    // async => assíncrona
