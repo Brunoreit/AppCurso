@@ -1,8 +1,8 @@
 const { select, input, checkbox } = require('@inquirer/prompts')
 
-let meta = {
-    value: 'exemplo',
-    checked: false
+let meta = { // "estrutura" da meta no meu programa
+    value: 'meta exemplo',
+    checked: false,
 }
 
 
@@ -32,8 +32,13 @@ const listarMetas = async () => {
         return
     }
 
+
+    // sistema para ler cada meta e ver se o que o usuário digitou
+    // condiz com o que ele está lendo e poder "marcar" (transformar true).
+    // caso contrario deixará falso mesmo
     metas.forEach((m) => {
-        m.checked = false
+        m.checked = false //deixa todas as metas "falsas" para corrigir o problema
+                          //de marcar e depois desmarcar, mas ele não "atualizar" de marcado para desmarcado.
     })
 
     respostas.forEach((resposta) => {
@@ -46,6 +51,23 @@ const listarMetas = async () => {
     })
 
     console.log('Meta(s) marcadas como concluída(s)')
+}
+
+const metasRealizadas = async () => {
+    const realizadas = metas.filter((meta) => { //"filter filtra para colocar em "realizadas"
+        return meta.checked
+    })
+
+    if(realizadas.length == 0){
+        console.log('Não existem metas realizadas!')
+        return
+    }
+
+    await select({
+        message:"Metas realizadas",
+        choices: [...realizadas]
+
+    })
 }
 
 const start = async () => {
@@ -66,6 +88,11 @@ const start = async () => {
 
                 },
                 {
+                    name: "Metas realizadas",
+                    value: "realizadas"
+
+                },
+                {
                     name: "Sair",
                     value: "sair"
 
@@ -82,6 +109,10 @@ const start = async () => {
 
             case "listar":
                 await listarMetas()
+                break
+            
+            case "realizadas":
+                await metasRealizadas()
                 break
 
             case "sair":

@@ -48,6 +48,8 @@ meta1 = {
     ]
 
 
+métodos de array: push, find, forEach
+
 
 ##  arrow function
 
