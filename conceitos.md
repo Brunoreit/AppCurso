@@ -60,3 +60,10 @@ meta1 = {
     function CriarMeta() {}
 
     (apenas criando uma função)   
+
+
+//Módulos 
+
+    importação de módulos (require, commonJS)
+
+    utilizei a biblioteca "inquirer" para criar prompts interativos    
